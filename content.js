@@ -107,16 +107,16 @@ window.PORTFOLIO = {
           "note": "Represented the Philippines among 75 countries, winning six of eight preliminary rounds and breaking 9th. Lost in the octofinals to the eventual champions, Canada."
         },
         {
-          "title": "6th Open Speaker · Asian Quarterfinalist",
+          "title": "Asian Quarterfinalist · 6th Best Speaker",
           "event": "Vietnam Asian Schools Debate Championship",
           "year": "2026",
-          "note": "Our team won 6/7 preliminary rounds and broke as the 2nd Open Team out of over 100 teams. Ranked as the 6th best speaker in Asia out of over 300 compoeting speakers."
+          "note": "Won 6/7 preliminary rounds and broke as the 2nd Open Team out of over 100 teams. Ranked as the 6th best speaker in Asia out of over 300 compoeting speakers."
         },
         {
           "title": "Asian Quarterfinalist",
           "event": "Thailand Asia World Schools Debate Championship",
           "year": "2025",
-          "note": "Our team won 4/6 preliminary rounds and broke as the 10th Open Team out of over 100 teams."
+          "note": "Won 4/6 preliminary rounds and broke as the 10th Open Team out of over 100 teams."
         }
       ],
       "imageAlt": "The Philippines debate team holding the Philippine flag at WSDC",
@@ -142,7 +142,7 @@ window.PORTFOLIO = {
       ],
       "achievements": [
         {
-          "title": "Grand Finalist",
+          "title": "National Grand Finalist",
           "event": "Philippine Schools Debate Championship",
           "year": "2025",
           "note": "Reached the National Grand Finals in a field of 135 teams after breaking as the 10th Open Team on 15/21 points."
@@ -154,13 +154,13 @@ window.PORTFOLIO = {
           "note": "Broke as the 5th Open Team in a field of 66 teams and reached the Grand Finals. Awarded the joint Overall Best Speaker award."
         },
         {
-          "title": "Grand Finalist · 4th Open Speaker (joint)",
+          "title": "National Grand Finalist · 4th Open Speaker (joint)",
           "event": "National Asian High School Debate Championship",
           "year": "2024",
           "note": "Won 5/7 preliminary rounds, broke as the 6th Open Team in a field of 60 teams, and reached the National Grand Finals. Awarded the joint 4th best speaker of the Philippines."
         },
         {
-          "title": "Quarterfinalist · 5th Open Speaker (joint)",
+          "title": "National Quarterfinalist · 5th Open Speaker (joint)",
           "event": "Philippine Schools Debate Championship 2026",
           "year": "2025",
           "note": "Broke as the 22nd Open Team on 13/21 points and reached the quarterfinals. Ranked as the joint 5th best speaker of the Philippines."
