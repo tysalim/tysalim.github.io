@@ -24,14 +24,15 @@ window.PORTFOLIO = {
     {
       "logo": "https://www.google.com/s2/favicons?domain=utoronto.ca&sz=128",
       "name": "University of Toronto",
-      "qualification": "Computer Science Admission Stream · St. George Campus",
+      "qualification": "St. George Campus · Computer Science",
       "date": "2026 — 2030",
       "location": "Toronto, Canada",
       "description": "Starting the next chapter in Toronto, with an interest in machine learning, useful software, and the people who use it.",
       "subjects": [
         "Computer science",
         "Class of 2030"
-      ]
+      ],
+      "coursework": ["MAT148H1: Calculus I with Proofs", "MAT149H1: Calculus II with Proofs", "CSC110Y1: Foundations of Computer Science I", "CSC111Y1: Foundations of Computer Science II", "PHY131H1: Introduction to Physics I", "PHY132H1: Introduction to Physics II", "ECO105Y1: Principles of Economics for Non-Specialists", "PHL245H1: Modern Symbolic Logic"]
     },
     {
       "logo": "https://www.google.com/s2/favicons?domain=xs.edu.ph&sz=128",
@@ -39,11 +40,14 @@ window.PORTFOLIO = {
       "qualification": "International Baccalaureate Diploma Programme",
       "date": "2013 — 2026",
       "location": "San Juan, Philippines",
-      "description": "42/45 final IB score, and ranked 1st in a cohort of 40. Received departmental awards in Science, Social Science, Chinese, and Filipino, as well as special citations in Computer Science, Physics, and Business Management.",
-      "subjects": [
+      "description": "Obtained a 42/45 final IB score, and ranked 1st in a cohort of 40. Received departmental awards in Science, Social Science, Chinese, and Filipino, as well as special citations in Computer Science, Physics, and Business Management.",
+      "coursework": [
         "Computer Science HL",
-        "Mathematics AA HL",
-        "Business Management HL"
+        "Mathematics: Analysis and Approaches HL",
+        "Business Management HL",
+        "Physics SL",
+        "English A: Language and Literature SL",
+        "Filipino A: Literature SL"
       ]
     }
   ],
@@ -61,7 +65,7 @@ window.PORTFOLIO = {
         "British Parliamentary"
       ],
       "description": [
-        "Member of Hart House Debating Club since September 2026."
+        "Member of Hart House Debating Club since September 2026, attending weekly practice sessions and competing in various regional and national British Parliamentary debate tournaments."
       ],
       "achievements": [
         {
@@ -71,7 +75,7 @@ window.PORTFOLIO = {
           "note": "Broke as the 4th Open Team on 10/12 points and reached the grand final."
         },
         {
-          "title": "Novice Semifinalist · 1st Novice Break",
+          "title": "Novice Semifinalist",
           "event": "Hart House Intervarsity",
           "year": "2026",
           "note": "Broke as the 1st Novice Team on 10/15 points and reached the novice semifinals in October 2026."
@@ -129,7 +133,7 @@ window.PORTFOLIO = {
       "date": "June 2022 — March 2026",
       "status": "former",
       "icon": "↗",
-      "summary": "From team member to captain, training the next generation of debaters.",
+      "summary": "Moved up from team member to captain over my high school years, and achieved success on the national stage while training the next generation of debaters all throughout.",
       "tags": [
         "Leadership",
         "Coaching",
@@ -144,25 +148,25 @@ window.PORTFOLIO = {
           "title": "Grand Finalist",
           "event": "Philippine Schools Debate Championship",
           "year": "2025",
-          "note": "Reached the grand final in a field of 135 teams after breaking as the 10th Open Team on 15/21 points."
+          "note": "Reached the National Grand Finals in a field of 135 teams after breaking as the 10th Open Team on 15/21 points."
         },
         {
-          "title": "Overall Best Speaker (joint) · Grand Finalist",
+          "title": "Grand Finalist · Overall Best Speaker (joint)",
           "event": "Diliman Schools British Parliamentary",
           "year": "2024",
-          "note": "Broke as the 5th Open Team in a field of 66 teams and received the joint Overall Best Speaker award."
+          "note": "Broke as the 5th Open Team in a field of 66 teams and reached the Grand Finals. Awarded the joint Overall Best Speaker award."
         },
         {
           "title": "Grand Finalist · 4th Open Speaker (joint)",
           "event": "National Asian High School Debate Championship",
           "year": "2024",
-          "note": "Won 5/7 preliminary rounds and reached the national grand final in a field of 60 teams."
+          "note": "Won 5/7 preliminary rounds, broke as the 6th Open Team in a field of 60 teams, and reached the National Grand Finals. Awarded the joint 4th best speaker of the Philippines."
         },
         {
           "title": "Quarterfinalist · 5th Open Speaker (joint)",
           "event": "Philippine Schools Debate Championship 2026",
           "year": "2025",
-          "note": "Held in December 2025. Broke as the 22nd Open Team on 13/21 points and reached the quarterfinals."
+          "note": "Broke as the 22nd Open Team on 13/21 points and reached the quarterfinals. Ranked as the joint 5th best speaker of the Philippines."
         }
       ],
       "imageAlt": "Xavier School Debate Team together on stage at NAsHDC",
@@ -177,12 +181,8 @@ window.PORTFOLIO = {
       "status": "current",
       "icon": "◇",
       "summary": "Judging school and university debate tournaments.",
-      "tags": [
-        "Adjudication",
-        "Feedback"
-      ],
       "description": [
-        "Adjudicating preliminary and elimination rounds across school and university tournaments."
+        "Adjudicating preliminary and elimination rounds across multiple school and university tournaments."
       ],
       "achievements": [
         {
@@ -245,7 +245,7 @@ window.PORTFOLIO = {
     {
       "image": "./assets/card-cover.png",
       "coverTheme": "slate",
-      "title": "Financial health, explained",
+      "title": "Cushion",
       "organization": "Sheridan Datathon",
       "date": "November 2026",
       "icon": "↗",
@@ -303,7 +303,7 @@ window.PORTFOLIO = {
     {
       "image": "./assets/card-cover.png",
       "coverTheme": "sand",
-      "title": "AI text detection",
+      "title": "Text Augmentation for AI-Text Classification",
       "organization": "Research paper",
       "icon": "Aa",
       "summary": "Testing how the training data changes a detector.",
@@ -324,7 +324,7 @@ window.PORTFOLIO = {
       "coverTheme": "sage",
       "title": "Education Associate",
       "organization": "FSAT",
-      "status": "unspecified",
+      "status": "current",
       "icon": "↗",
       "summary": "Education and community-building at FSAT.",
       "tags": [
@@ -356,7 +356,7 @@ window.PORTFOLIO = {
     {
       "image": "./assets/card-cover.png",
       "coverTheme": "sand",
-      "title": "Vice-President",
+      "title": "Vice President",
       "organization": "Xavier “Xigma” Mathematics Club",
       "date": "July 2025 — March 2026",
       "status": "former",
@@ -390,7 +390,9 @@ window.PORTFOLIO = {
         "Set up venues, giveaways, and technical equipment for the school’s annual TEDx conference, attended by more than 150 external participants.",
         "Coordinated with merchandise suppliers, audio-visual contractors, and attending schools."
       ]
-    },
+    }
+  ],
+  "initiatives": [
     {
       "image": "./assets/card-cover.png",
       "coverTheme": "slate",
@@ -409,31 +411,11 @@ window.PORTFOLIO = {
         "Organized a 120-person novice debate competition, reaching out directly to underrepresented institutions.",
         "We raised PHP 40,000 in sponsorships and partnered with local businesses to reduce entry fees to roughly a quarter of the rate for similar competitions, while waiving fees for volunteer judges."
       ]
-    }
-  ],
-  "initiatives": [
-    {
-      "image": "./assets/card-cover.png",
-      "coverTheme": "slate",
-      "title": "Food redistribution platform",
-      "organization": "ENVision Case Competition",
-      "date": "May — June 2025",
-      "icon": "◌",
-      "summary": "A proposal to connect surplus food with nearby customers.",
-      "tags": [
-        "Product concept",
-        "Predictive AI",
-        "Finalist"
-      ],
-      "description": [
-        "Proposed a city-wide application connecting vendors and customers, with predictive modelling to help vendors assess food-waste risk and a marketplace for surplus food.",
-        "One of ten teams to advance to the final stage from more than 30 high-school and collegiate teams. A competition proposal, rather than a deployed application."
-      ]
     },
     {
       "image": "./assets/card-cover.png",
       "coverTheme": "sage",
-      "title": "Toyota customer retention",
+      "title": "",
       "organization": "ADMU Blue Case Competition",
       "date": "March — April 2026",
       "icon": "◇",

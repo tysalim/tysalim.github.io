@@ -41,7 +41,8 @@
   const schoolLogo = item => item.logo
     ? `<div class="school-icon school-logo"><img src="${safeUrl(item.logo)}" alt="${escape(item.name)} logo" width="56" height="56" loading="lazy" decoding="async" referrerpolicy="no-referrer" /><span class="school-logo-fallback" aria-hidden="true">${escape(item.initials)}</span></div>`
     : `<div class="school-icon" aria-hidden="true">${escape(item.initials)}</div>`;
-  $('#education-list').innerHTML = data.education.map(item => `<article class="education-card">${schoolLogo(item)}<div><div class="school-heading"><h3>${escape(item.name)}</h3><span>${escape(item.date || item.location)}</span></div><p class="qualification">${escape(item.qualification)}</p><p class="education-description">${escape(item.description)}</p></div></article>`).join('');
+  const coursework = item => `<details class="coursework"><summary aria-label="Relevant coursework at ${escape(item.name)}">Relevant coursework</summary>${item.coursework?.length ? `<ul>${item.coursework.map(course => `<li>${escape(course)}</li>`).join('')}</ul>` : '<p class="coursework-empty">Course list coming soon.</p>'}</details>`;
+  $('#education-list').innerHTML = data.education.map(item => `<article class="education-card">${schoolLogo(item)}<div><div class="school-heading"><h3>${escape(item.name)}</h3><span>${escape(item.date || item.location)}</span></div><p class="qualification">${escape(item.qualification)}</p><p class="education-description">${escape(item.description)}</p>${coursework(item)}</div></article>`).join('');
   $$('.school-logo img').forEach(img => img.addEventListener('error', () => {
     img.hidden = true;
     img.parentElement.classList.add('logo-unavailable');

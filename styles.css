@@ -71,3 +71,12 @@
 .nav-links a::after{content:"";position:absolute;left:0;right:0;bottom:-8px;height:2px;border-radius:2px;background:var(--accent);transform:scaleX(0);transition:transform .18s ease}
 .nav-links a[aria-current="location"]{color:var(--accent)}
 .nav-links a[aria-current="location"]::after{transform:scaleX(1)}
+
+.coursework{margin-top:18px;border-top:1px solid var(--border);padding-top:12px}
+.coursework summary{display:flex;align-items:center;justify-content:space-between;gap:16px;list-style:none;cursor:pointer;font-size:12px;color:var(--accent)}
+.coursework summary::-webkit-details-marker{display:none}
+.coursework summary::after{content:"+";font-size:16px;font-weight:400;line-height:1}
+.coursework[open] summary::after{content:"−"}
+.coursework ul{margin:12px 0 0;padding-left:17px;font-size:12px;line-height:1.85;color:var(--muted)}
+.coursework li{padding-left:2px;margin:4px 0}
+.coursework-empty{margin:12px 0 0;font-size:12px;color:var(--muted)}
