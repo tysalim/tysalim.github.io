@@ -1,0 +1,20 @@
+(() => {
+  'use strict';
+  const data = window.PORTFOLIO;
+  const tracks = ['debate', 'tech', 'community'];
+  const requested = new URLSearchParams(window.location.search).get('track');
+  const track = tracks.includes(requested) ? requested : 'debate';
+  const titles = { debate: 'Debate CV', tech: 'Technology Résumé', community: 'Leadership & Community Résumé' };
+  const escape = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const section = (title, body) => `<section><h2>${escape(title)}</h2>${body}</section>`;
+  const achievements = items => items?.length ? `<h4 class="resume-result-heading">Achievements</h4><ul>${items.map(item => `<li><strong>${escape(item.title)}</strong> — ${escape(item.event)} (${escape(item.year)})${item.note ? `. ${escape(item.note)}` : ''}</li>`).join('')}</ul>` : '';
+  const entries = items => items.map(item => `<article><div class="entry-heading"><h3>${escape(item.title)}</h3>${item.date ? `<span class="date">${escape(item.date)}</span>` : ''}</div><p class="organization">${escape(item.organization)}</p>${item.description?.length ? `<ul>${item.description.map(p => `<li>${escape(p)}</li>`).join('')}</ul>` : ''}${achievements(item.achievements)}</article>`).join('');
+  const education = section('Education', data.education.map(item => `<article><div class="entry-heading"><h3>${escape(item.name)}</h3><span class="date">${escape(item.date)}</span></div><p class="organization">${escape(item.qualification)}</p>${item.initials === 'XS' ? '<p>42/45 final IB score · Ranked 1st in a cohort of 40.</p>' : ''}</article>`).join(''));
+  const experience = section(track === 'debate' ? 'Organizational experience' : 'Experience', entries(data[track]));
+  const work = track === 'tech' ? section('Selected projects', entries(data.projects)) : track === 'community' ? section('Selected initiatives', entries(data.initiatives)) : '';
+  document.title = `Tyler Lim — ${titles[track]}`;
+  document.querySelector('#resume-kind').textContent = titles[track];
+  document.querySelector('#back-link').href = `./index.html#${track}`;
+  document.querySelector('#resume-content').innerHTML = education + experience + work;
+  document.querySelector('#print-resume').addEventListener('click', () => window.print());
+})();

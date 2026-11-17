@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#111211" />
-    <meta name="description" content="Tyler Samuel Lim — debate, technology, and building things that help people." />
-    <title>Tyler Samuel Lim</title>
+    <meta name="description" content="Tyler Lim — debate, technology, and building things that help people." />
+    <title>Tyler Lim</title>
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="./styles.css" />
-    <script defer src="./content.js"></script>
-    <script defer src="./app.js"></script>
+    <link rel="stylesheet" href="./styles.css?v=20261116-photos" />
+    <script defer src="./content.js?v=20261116-debate-order-2"></script>
+    <script defer src="./app.js?v=20261116-photos"></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -17,7 +17,7 @@
       <nav class="nav wrap" aria-label="Main navigation">
         <a class="wordmark" href="#about" aria-label="Tyler, home">tyler<span>.</span></a>
         <div class="nav-links">
-          <a href="#about">About</a><a href="#education">Education</a><a href="#debate">Debate</a><a href="#tech">Tech</a>
+          <a href="#about">About</a><a href="#education">Education</a><a href="#debate">Debate</a><a href="#tech">Tech</a><a href="#community">Community</a>
         </div>
         <a class="nav-contact" href="https://linkedin.com/in/tyler-samuel-lim" target="_blank" rel="noopener noreferrer">Let’s connect <span aria-hidden="true">↗</span></a>
       </nav>
@@ -25,11 +25,17 @@
 
     <main id="main" class="wrap">
       <section id="about" class="hero" aria-labelledby="hero-title">
-        <div class="eyebrow"><span class="small-line"></span> DEBATER · BUILDER · ALWAYS LEARNING</div>
-        <div class="hero-heading"><h1 id="hero-title">Tyler Samuel Lim<span>.</span></h1><div class="monogram" aria-hidden="true">tl<span>↗</span></div></div>
-        <p class="hero-lead">Good questions.<br /><span>Useful things.</span></p>
-        <div id="bio" class="bio"></div>
-        <div class="hero-links" id="social-links"></div>
+        <div class="hero-layout">
+          <div class="hero-copy">
+            <div class="eyebrow"><span class="small-line"></span> DEBATER · BUILDER · ALWAYS LEARNING</div>
+            <div class="hero-heading"><h1 id="hero-title">Tyler Lim</h1></div>
+            <div id="bio" class="bio"></div>
+            <div class="hero-links" id="social-links"></div>
+          </div>
+          <figure class="hero-portrait">
+            <img src="https://drive.google.com/thumbnail?id=1Az3tULmDFhkbSPFz9AxSUF3wz3SjMu_4&amp;sz=w1200" alt="Portrait of Tyler Lim" width="600" height="800" fetchpriority="high" decoding="async" referrerpolicy="no-referrer" />
+          </figure>
+        </div>
         <div class="hero-bottom"><span>A little about me, and what I’m working on.</span><a href="#education" aria-label="Explore my background">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></a></div>
       </section>
 
@@ -39,24 +45,33 @@
       </section>
 
       <section id="work" class="work" aria-labelledby="work-title">
-        <div class="section-heading"><div><span class="section-index">02 / WHAT I DO</span><h2 id="work-title">Two sides of the same curiosity.</h2></div></div>
+        <div class="section-heading"><div><span class="section-index">02 / WHAT I DO</span><h2 id="work-title">Ideas, code &amp; community.</h2></div></div>
         <div class="track-tabs" role="tablist" aria-label="Explore my work">
-          <button id="debate-tab" role="tab" aria-selected="true" aria-controls="debate-panel" data-track="debate"><span aria-hidden="true">◌</span> Debate <span class="tab-description">Ideas, people & perspective</span></button>
-          <button id="tech-tab" role="tab" aria-selected="false" aria-controls="tech-panel" tabindex="-1" data-track="tech"><span aria-hidden="true">⌘</span> Tech <span class="tab-description">Code, research & experiments</span></button>
+          <button id="debate-tab" role="tab" aria-selected="true" aria-controls="debate-panel" data-track="debate">debate</button>
+          <button id="tech-tab" role="tab" aria-selected="false" aria-controls="tech-panel" tabindex="-1" data-track="tech">tech</button>
+          <button id="community-tab" role="tab" aria-selected="false" aria-controls="community-panel" tabindex="-1" data-track="community">community</button>
         </div>
         <div id="debate-panel" role="tabpanel" aria-labelledby="debate-tab" tabindex="0">
+          <div class="track-resume"><a id="debate-resume" class="resume-link" href="./resume.html?track=debate" target="_blank" rel="noopener noreferrer">View Debate CV <span aria-hidden="true">↗</span></a></div>
           <p class="track-intro">Learning to make a case. Learning when to change my mind. Helping others find their voice.</p>
-          <div class="subsection-heading"><h3>Experience</h3><div class="filters" role="group" aria-label="Filter debate experience"><button data-filter="current" data-group="debate" aria-pressed="true">Current</button><button data-filter="former" data-group="debate" aria-pressed="false">Former</button></div></div>
+          <div class="subsection-heading"><h3>Experience</h3><div class="filters" role="group" aria-label="Filter debate experience"><button data-filter="all" data-group="debate" aria-pressed="true">All</button><button data-filter="current" data-group="debate" aria-pressed="false">Current</button><button data-filter="former" data-group="debate" aria-pressed="false">Former</button></div></div>
           <div id="debate-experience" class="cards" aria-live="polite"></div>
-          <div class="subsection-heading achievements-heading"><h3>Selected achievements</h3><span class="side-note">A few milestones along the way.</span></div>
-          <div id="achievements" class="achievements"></div>
         </div>
         <div id="tech-panel" role="tabpanel" aria-labelledby="tech-tab" tabindex="0" hidden>
+          <div class="track-resume"><a id="tech-resume" class="resume-link" href="./resume.html?track=tech" target="_blank" rel="noopener noreferrer">View Tech résumé <span aria-hidden="true">↗</span></a></div>
           <p class="track-intro">Exploring how machine learning and thoughtful software can make learning and everyday life a little easier.</p>
-          <div class="subsection-heading"><h3>Experience</h3><div class="filters" role="group" aria-label="Filter tech experience"><button data-filter="current" data-group="tech" aria-pressed="true">Current</button><button data-filter="former" data-group="tech" aria-pressed="false">Former</button></div></div>
+          <div class="subsection-heading"><h3>Experience</h3><div class="filters" role="group" aria-label="Filter tech experience"><button data-filter="all" data-group="tech" aria-pressed="true">All</button><button data-filter="current" data-group="tech" aria-pressed="false">Current</button><button data-filter="former" data-group="tech" aria-pressed="false">Former</button></div></div>
           <div id="tech-experience" class="cards" aria-live="polite"></div>
           <div class="subsection-heading projects-heading"><h3>Selected projects</h3><span class="side-note">Small ideas, made tangible.</span></div>
           <div id="projects" class="cards"></div>
+        </div>
+        <div id="community-panel" role="tabpanel" aria-labelledby="community-tab" tabindex="0" hidden>
+          <div class="track-resume"><a id="community-resume" class="resume-link" href="./resume.html?track=community" target="_blank" rel="noopener noreferrer">View community résumé <span aria-hidden="true">↗</span></a></div>
+          <p class="track-intro">Bringing people together, sharing what I’ve learned, and helping ideas become something a community can use.</p>
+          <div class="subsection-heading"><h3>Experience</h3><div class="filters" role="group" aria-label="Filter community experience"><button data-filter="all" data-group="community" aria-pressed="true">All</button><button data-filter="current" data-group="community" aria-pressed="false">Current</button><button data-filter="former" data-group="community" aria-pressed="false">Former</button></div></div>
+          <div id="community-experience" class="cards" aria-live="polite"></div>
+          <div class="subsection-heading projects-heading"><h3>Selected initiatives</h3><span class="side-note">Ideas for communities and organizations.</span></div>
+          <div id="initiatives" class="cards"></div>
         </div>
         <p class="expand-hint"><span aria-hidden="true">+</span> Open any card for the story behind it.</p>
       </section>

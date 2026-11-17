@@ -4,3 +4,59 @@
 @media(max-width:680px){.wrap{padding-inline:23px}.nav{gap:24px;height:72px}.nav-links{gap:18px}.nav-contact{display:none}.hero{padding-top:49px}h1{font-size:38px;letter-spacing:-1.8px}.monogram{width:49px;height:49px;font-size:24px}.hero-heading{gap:10px}.hero-lead{font-size:27px}.bio{font-size:14px}.eyebrow{font-size:8px;letter-spacing:1.4px}.hero-bottom{margin-bottom:35px;padding-top:35px;gap:20px}.hero-bottom>span{max-width:180px}.hero-bottom>a{font-size:8px;white-space:nowrap}.section-heading>.side-note{display:none}.school-heading{display:block}.school-heading>span{display:block;margin-top:2px}.education-card{gap:14px;grid-template-columns:40px 1fr}.school-icon{width:39px;height:39px}.work{padding-top:33px}.work h2{font-size:23px;max-width:300px}.tab-description{display:none}.track-tabs button{justify-content:center;padding:10px}.card summary{padding:18px 15px;gap:12px}.card-icon{width:32px;height:32px;font-size:18px}.card-details{margin-left:59px;margin-right:18px}.card-title{font-size:14px}.card-summary{font-size:12px}.subsection-heading>.side-note{display:none}.footer{flex-wrap:wrap}.footer>span:nth-child(2){display:none}.contact{padding-top:36px}.track-intro{line-height:1.8}}
 @media(max-width:380px){.nav-links{gap:12px}.nav{gap:20px}.nav-links a{font-size:12px}h1{font-size:33px}.monogram{display:none}.hero-bottom>span{max-width:135px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+
+/* Notion-style gallery: image cover, compact page body, native disclosure. */
+.hero-layout{display:grid;grid-template-columns:minmax(0,1fr) 120px;gap:28px;align-items:start}
+.hero-copy{min-width:0}.hero-copy .bio{margin-top:25px}
+.hero-portrait{--portrait-x:50%;--portrait-y:35%;margin:35px 0 0;width:100%;aspect-ratio:3/4;overflow:hidden;border:1px solid #3b4435;border-radius:9px;background:var(--surface);box-shadow:0 10px 32px #00000024}
+.hero-portrait img{display:block;width:100%;height:100%;object-fit:cover;object-position:var(--portrait-x) var(--portrait-y)}
+@media(max-width:680px){.hero-layout{grid-template-columns:minmax(0,1fr) 80px;gap:18px 16px;align-items:center}.hero-copy{display:contents}.hero-copy .eyebrow{grid-column:1/-1;grid-row:1}.hero-copy .hero-heading{grid-column:1;grid-row:2;margin-top:0}.hero-portrait{grid-column:2;grid-row:2;margin:0;width:80px;border-radius:7px}.hero-copy .bio{grid-column:1/-1;grid-row:3;margin-top:0}.hero-copy .hero-links{grid-column:1/-1;grid-row:4;margin-top:4px}}
+.cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;align-items:start}
+.card{min-width:0;border-radius:10px;box-shadow:0 2px 5px #00000012}
+.card summary{display:block;padding:0}
+.card-cover{display:block;position:relative;overflow:hidden;aspect-ratio:2.1;background:#c5cbbb;border-bottom:1px solid var(--border);border-radius:9px 9px 0 0}
+.card-cover img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 45%;filter:saturate(.68) brightness(.84);transition:transform .3s ease,filter .3s ease}
+.cover-lavender{background:#b8b2c7}.cover-lavender img{object-position:50% 15%;filter:saturate(.55) hue-rotate(32deg) brightness(.84)}
+.cover-sand{background:#c9b89c}.cover-sand img{object-position:50% 85%;filter:saturate(.65) sepia(.15) brightness(.88)}
+.cover-slate{background:#a9bcc2}.cover-slate img{object-position:50% 65%;filter:saturate(.45) hue-rotate(155deg) brightness(.8)}
+.card:hover .card-cover img{transform:scale(1.035)}
+.cover-photo{background:#171917}
+.card .cover-photo img{object-position:center;filter:none}
+.card-body{display:flex;align-items:flex-start;gap:11px;padding:20px 18px 21px}
+.card .card-icon{width:30px;height:30px;font-size:17px;margin-top:1px;border-radius:6px}
+.card .card-meta{font-size:9px;line-height:1.65;margin-bottom:6px}
+.card .card-title{font-size:15px;line-height:1.45}
+.card .card-summary{font-size:12px;line-height:1.7;margin-top:7px}
+.card .tags{gap:5px;margin-top:14px}.card .tags>span{font-size:9px;padding:3px 7px}
+.card .card-toggle{width:13px;margin-top:3px}.card .card-toggle:before,.card .card-toggle:after{left:1px}
+.card-details{margin:0 18px 22px;padding-top:17px;font-size:12px}
+.empty-state{grid-column:1/-1}
+.card .card-cover img{object-position:center}
+.card .card-cover.cover-hhdc img{object-position:50% 72%;filter:none;transform:scale(1.16);transform-origin:right 70%}
+.card:hover .card-cover.cover-hhdc img{transform:scale(1.195)}
+.card .card-cover.cover-xdt img{object-position:50% 62%;filter:none;transform:scale(1.35);transform-origin:center 60%}
+.card:hover .card-cover.cover-xdt img{transform:scale(1.385)}
+@media(max-width:680px){.cards{grid-template-columns:1fr;gap:16px}.card-cover{aspect-ratio:2.25}.card-body{padding:19px 18px}.card .card-meta{font-size:10px}.card .card-title{font-size:16px}.card .tags>span{font-size:10px}.card-details{margin:0 18px 22px}}
+
+/* Three areas of work, each with its own résumé. */
+.experience-achievements{margin-top:22px;border-top:1px solid var(--border);padding-top:16px}
+.experience-achievements h4{margin:0 0 12px;font-size:10px;font-weight:500;letter-spacing:1.2px;text-transform:uppercase;color:var(--accent)}
+.experience-achievements ul{list-style:none;margin:0;padding:0}
+.experience-achievements li{padding:12px 0;border-top:1px solid #292f25}
+.experience-achievements li:first-child{padding-top:0;border-top:0}.experience-achievements li:last-child{padding-bottom:0}
+.result-topline{display:flex;align-items:baseline;justify-content:space-between;gap:12px;font-size:11px;line-height:1.7}.result-topline strong{font-weight:500;color:var(--text)}.result-topline>span{flex-shrink:0;color:var(--faint);font-size:10px}
+.result-event{display:block;font-size:10px;line-height:1.7;color:var(--accent);margin:3px 0 5px}.experience-achievements li p{font-size:11px;line-height:1.8;color:var(--muted);margin:0}
+.education-card{grid-template-columns:56px minmax(0,1fr)}
+.school-icon.school-logo{width:56px;height:56px;padding:8px;background:#f5f5f0;border:1px solid #d4d9cf;border-radius:10px;overflow:hidden}
+.school-logo img{display:block;width:100%;height:100%;object-fit:contain}
+.school-logo-fallback{display:none;font-family:var(--font);font-size:12px;font-weight:600;color:#26321e}
+.school-logo.logo-unavailable .school-logo-fallback{display:block}
+@media(max-width:680px){.education-card{grid-template-columns:44px minmax(0,1fr)}.school-icon.school-logo{width:44px;height:44px;padding:6px;border-radius:8px}.school-logo-fallback{font-size:10px}}
+.track-tabs{grid-template-columns:repeat(3,minmax(0,1fr))}
+.track-tabs button{display:flex;align-items:center;justify-content:center;padding:12px 15px}
+.track-tabs .tab-description{grid-column:2;margin-left:0;font-size:9px;line-height:1.5;white-space:normal}
+.track-resume{display:flex;justify-content:flex-end;margin-top:20px}
+.resume-link{display:inline-flex;gap:18px;align-items:center;font-size:11px;color:var(--accent);padding:7px 11px;border:1px solid #3b4632;border-radius:5px;background:#1b2117}
+.resume-link:hover{background:#272f21}.track-resume+.track-intro{margin-top:16px}
+@media(max-width:680px){.nav{gap:20px}.nav-links{gap:14px}.nav-links a{font-size:11px}.track-tabs button{display:flex;gap:7px;padding:11px 5px;font-size:12px}.track-tabs .tab-description{display:none}.track-resume{justify-content:flex-start}}
+@media(max-width:400px){.nav{gap:12px}.nav-links{gap:9px}.nav-links a{font-size:10px}.wordmark{font-size:23px}.track-tabs button>span:first-child{font-size:15px}}
