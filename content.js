@@ -1,10 +1,7 @@
-// Edit your portfolio here, then refresh the page. No build step required.
-// status: current, former, or unspecified (visible under All).
-// Debate results live in each experience’s achievements array.
 window.PORTFOLIO = {
   "bio": [
-    "I’m a first-year Computer Science student at the University of Toronto. I'm also a a former member of the Philippine national debate team.",
-    "While I'm interested in many different fields, I’m particularly interested in making complex ideas useful, whether that means building useful tools using technology, helping people find their voice, or asking better questions. Lately, I’ve been exploring AI, education, and community-oriented software development."
+    "I’m a first-year Computer Science student at the University of Toronto, with a deep interest in artificial intelligence and its applications. I'm also a former member of the Philippine national debate team, with an interest in resolving issues through debate and developing solutions with meaningful community impact.",
+    "While I'm interested in many different fields, I’m particularly interested in making complex ideas useful, whether that means building useful tools using technology, helping people find their voice, or asking better questions."
   ],
   "socials": [
     {
@@ -27,12 +24,12 @@ window.PORTFOLIO = {
       "qualification": "St. George Campus · Computer Science",
       "date": "2026 — 2030",
       "location": "Toronto, Canada",
-      "description": "Starting the next chapter in Toronto, with an interest in machine learning, useful software, and the people who use it.",
+      "description": "Starting my next educational chapter in Toronto, with an interest in machine learning, building useful software, and analyzing the impact of technology on society.",
       "subjects": [
-        "Computer science",
+        "Computer Science",
         "Class of 2030"
       ],
-      "coursework": ["MAT148H1: Calculus I with Proofs", "MAT149H1: Calculus II with Proofs", "CSC110Y1: Foundations of Computer Science I", "CSC111Y1: Foundations of Computer Science II", "PHY131H1: Introduction to Physics I", "PHY132H1: Introduction to Physics II", "ECO105Y1: Principles of Economics for Non-Specialists", "PHL245H1: Modern Symbolic Logic"]
+      "coursework": ["MAT148H1: Calculus I with Proofs", "MAT149H1: Calculus II with Proofs", "CSC110Y1: Foundations of Computer Science I", "CSC111H1: Foundations of Computer Science II", "PHY131H1: Introduction to Physics I", "PHY132H1: Introduction to Physics II", "ECO105Y1: Principles of Economics for Non-Specialists", "PHL245H1: Modern Symbolic Logic"]
     },
     {
       "logo": "https://www.google.com/s2/favicons?domain=xs.edu.ph&sz=128",

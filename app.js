@@ -36,7 +36,19 @@
     img.closest('.card-cover')?.remove();
   }, true);
 
-  $('#bio').innerHTML = data.bio.map(p => `<p>${escape(p)}</p>`).join('');
+  const bioLinks = [
+    ['deep interest in artificial intelligence and its applications', 'tech'],
+    ['resolving issues through debate', 'debate'],
+    ['developing solutions with meaningful community impact', 'community']
+  ];
+  $('#bio').innerHTML = data.bio.map(paragraph => {
+    let text = escape(paragraph);
+    for (const [phrase, track] of bioLinks) {
+      const label = escape(phrase);
+      text = text.replaceAll(label, `<a class="bio-section-link" href="#${track}">${label}</a>`);
+    }
+    return `<p>${text}</p>`;
+  }).join('');
   $('#social-links').innerHTML = data.socials.map(link).join('');
   const schoolLogo = item => item.logo
     ? `<div class="school-icon school-logo"><img src="${safeUrl(item.logo)}" alt="${escape(item.name)} logo" width="56" height="56" loading="lazy" decoding="async" referrerpolicy="no-referrer" /><span class="school-logo-fallback" aria-hidden="true">${escape(item.initials)}</span></div>`
@@ -126,7 +138,7 @@
     });
   });
   // Repeated navigation to the selected track still returns to the work section.
-  $$('.nav-links a').forEach(a => a.addEventListener('click', () => { if (a.hash === location.hash) route(); }));
+  $$('.nav-links a, .bio a[href^="#"]').forEach(a => a.addEventListener('click', () => { if (a.hash === location.hash) route(); }));
   window.addEventListener('hashchange', route);
   window.addEventListener('scroll', scheduleNavUpdate, { passive: true });
   window.addEventListener('resize', scheduleNavUpdate);

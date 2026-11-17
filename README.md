@@ -82,3 +82,5 @@ This is a static site. Upload `index.html`, `styles.css`, `content.js`, `app.js`
 Native expandable cards support Enter/Space. Track tabs support Left/Right and Home/End. Filter buttons expose their pressed state. The site includes visible focus states, a skip link, reduced-motion support, and layouts for narrow screens.
 
 Experience and project cards show the organization and optional date as tags above the title. Left-side icons and bottom topic tags are not rendered. The `icon` and `tags` values remain editable data without appearing in the card layout.
+
+The visual palette uses near-black backgrounds, neutral grey text and borders, and deep-blue tabs, filters, metadata tags, and buttons. Lighter blue link text keeps small text readable on the dark surfaces. Theme variables are at the top of `styles.css`.
