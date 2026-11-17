@@ -3,8 +3,8 @@
 // Debate results live in each experience’s achievements array.
 window.PORTFOLIO = {
   "bio": [
-    "I’m a first-year student in the Computer Science admission stream at the University of Toronto, and a former member of the Philippine national debate team.",
-    "I’m interested in making complex ideas useful — whether that means building a machine learning tool, helping someone find their voice, or asking a better question. Lately, I’ve been exploring AI, education, and software that serves communities."
+    "I’m a first-year Computer Science student at the University of Toronto. I'm also a a former member of the Philippine national debate team.",
+    "While I'm interested in many different fields, I’m particularly interested in making complex ideas useful, whether that means building useful tools using technology, helping people find their voice, or asking better questions. Lately, I’ve been exploring AI, education, and community-oriented software development."
   ],
   "socials": [
     {
@@ -49,14 +49,13 @@ window.PORTFOLIO = {
   ],
   "debate": [
     {
-      "image": "./assets/hhdc-team.jpg",
+      "image": "./assets/hhdc-group.jpg",
       "coverTheme": "hhdc",
       "title": "Member",
       "organization": "Hart House Debating Club",
       "date": "September 2026 — Present",
       "status": "current",
-      "icon": "◌",
-      "summary": "University debate, practice, and competition.",
+      "summary": "Competing in university-level British Parliamentary debate tournaments.",
       "tags": [
         "University debate",
         "British Parliamentary"
@@ -78,7 +77,7 @@ window.PORTFOLIO = {
           "note": "Broke as the 1st Novice Team on 10/15 points and reached the novice semifinals in October 2026."
         }
       ],
-      "imageAlt": "Hart House Debating Club photo",
+      "imageAlt": "Hart House Debating Club group photo in the Great Hall",
       "imageFallback": "./assets/card-cover.png"
     },
     {
@@ -452,16 +451,16 @@ window.PORTFOLIO = {
   ],
   "resumes": {
     "debate": {
-      "label": "View debate CV",
-      "url": "./resume.html?track=debate"
+      "label": "View debate CV (PDF)",
+      "url": "./assets/resumes/debate-cv.pdf"
     },
     "tech": {
-      "label": "View tech résumé",
-      "url": "./resume.html?track=tech"
+      "label": "View tech résumé (PDF)",
+      "url": "./assets/resumes/tyler-resume.pdf#page=3"
     },
     "community": {
-      "label": "View community résumé",
-      "url": "./resume.html?track=community"
+      "label": "View community résumé (PDF)",
+      "url": "./assets/resumes/tyler-resume.pdf#page=1"
     }
   }
 };

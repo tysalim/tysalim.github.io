@@ -32,8 +32,8 @@
 .card-details{margin:0 18px 22px;padding-top:17px;font-size:12px}
 .empty-state{grid-column:1/-1}
 .card .card-cover img{object-position:center}
-.card .card-cover.cover-hhdc img{object-position:50% 72%;filter:none;transform:scale(1.16);transform-origin:right 70%}
-.card:hover .card-cover.cover-hhdc img{transform:scale(1.195)}
+.card .card-cover.cover-hhdc img{object-position:50% 75%;filter:none;transform:none;transform-origin:center}
+.card:hover .card-cover.cover-hhdc img{transform:scale(1.035)}
 .card .card-cover.cover-xdt img{object-position:50% 62%;filter:none;transform:scale(1.35);transform-origin:center 60%}
 .card:hover .card-cover.cover-xdt img{transform:scale(1.385)}
 @media(max-width:680px){.cards{grid-template-columns:1fr;gap:16px}.card-cover{aspect-ratio:2.25}.card-body{padding:19px 18px}.card .card-meta{font-size:10px}.card .card-title{font-size:16px}.card .tags>span{font-size:10px}.card-details{margin:0 18px 22px}}
@@ -60,3 +60,14 @@
 .resume-link:hover{background:#272f21}.track-resume+.track-intro{margin-top:16px}
 @media(max-width:680px){.nav{gap:20px}.nav-links{gap:14px}.nav-links a{font-size:11px}.track-tabs button{display:flex;gap:7px;padding:11px 5px;font-size:12px}.track-tabs .tab-description{display:none}.track-resume{justify-content:flex-start}}
 @media(max-width:400px){.nav{gap:12px}.nav-links{gap:9px}.nav-links a{font-size:10px}.wordmark{font-size:23px}.track-tabs button>span:first-child{font-size:15px}}
+
+/* Organization and duration take the place of topic tags and left icons. */
+.card .card-meta{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px;font-size:10px;line-height:1.6}
+.card-meta .meta-tag{display:inline-block;max-width:100%;padding:3px 8px;border-radius:4px;background:#232820;color:#a5b09d;overflow-wrap:anywhere}
+.card-body{gap:12px}
+
+/* Scroll-aware navigation, with no change to link sizing. */
+.nav-links a{position:relative}
+.nav-links a::after{content:"";position:absolute;left:0;right:0;bottom:-8px;height:2px;border-radius:2px;background:var(--accent);transform:scaleX(0);transition:transform .18s ease}
+.nav-links a[aria-current="location"]{color:var(--accent)}
+.nav-links a[aria-current="location"]::after{transform:scaleX(1)}
