@@ -1,5 +1,7 @@
 # Tyler Samuel Lim — portfolio
 
+Source repository: [tysalim/tysalim.github.io](https://github.com/tysalim/tysalim.github.io)
+
 A minimal dark portfolio built with HTML, CSS, and JavaScript. No dependencies or build step.
 
 ## Preview
@@ -59,22 +61,17 @@ Content is based on `Tyler Lim - Resume (11).pdf` and `Tyler Lim - Debate CV (2)
 
 ## GitHub
 
-The folder is a local Git repository on the `main` branch. A remote repository must still be created and connected with authenticated GitHub access.
+This folder is connected to `https://github.com/tysalim/tysalim.github.io.git` on the `main` branch.
 
-With GitHub CLI installed and signed in, create and push a **private** repository:
-
-```sh
-gh repo create tyler-portfolio --private --source=. --remote=origin --push
-```
-
-Alternatively create an empty repository at https://github.com/new, then use the exact URL GitHub returns:
+For future updates, run from this folder:
 
 ```sh
-git remote add origin YOUR_REPOSITORY_URL
-git push -u origin main
+git add .
+git commit -m "Update portfolio"
+git push
 ```
 
-Do not add an unrelated remote or force-push an existing repository. Keep source CVs in `private-sources/` if needed; that directory is ignored. Nothing has been published publicly.
+Keep source CVs in `private-sources/` if needed; that directory is ignored.
 
 ## Hosting later
 
